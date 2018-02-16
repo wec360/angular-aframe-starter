@@ -1,0 +1,62 @@
+<a-scene
+  class="scene"
+  cursor="rayOrigin: mouse"
+  vr-mode-ui="enabled: false"
+>
+  <a-assets>
+    <img id="skybox-image" src="/assets/img/skybox.jpg" alt="Sky" />
+  </a-assets>
+
+  <!--
+  Camera And Lights
+  -->
+  <a-camera
+    id="camera"
+    #camera
+    position="0 160 400"
+    wasd-controls="
+      acceleration: 2000;
+      fly: true;
+    "
+  ></a-camera>
+
+  <a-light
+    id="main-light"
+    type="ambient"
+    color="#ffffff"
+    intensity="1"
+  ></a-light>
+
+  <a-light
+    id="sun-light"
+    position="0 0 0"
+    type="point"
+    color="#ffffff"
+    intensity="0.75"
+    light="
+      castShadow: true;
+    "
+  ></a-light>
+
+  <!-- World Setup -->
+  <a-sky
+    id="sky"
+    position="0 0 0"
+    radius="1000"
+    color="#ffffff"
+    src="#skybox-image"
+  ></a-sky>
+
+  <a-circle
+    id="ground"
+    position="0 0 0"
+    rotation="-90 0 0"
+    radius="1000"
+    color="#cccccc"
+  ></a-circle>
+
+  <a-entity class="objects">
+    <a-box id="box" width="20" height="20" depth="20" color="#ff0000"></a-box>
+  </a-entity>
+
+</a-scene>

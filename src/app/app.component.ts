@@ -1,10 +1,9 @@
-import { Component } from '@angular/core';
+import {Component, ViewEncapsulation} from '@angular/core';
 
 @Component({
   selector: 'wec-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template: '<wec-scene></wec-scene>',
+  encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
-  title = 'wec';
 }

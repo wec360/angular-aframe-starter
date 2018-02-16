@@ -23,7 +23,9 @@
     "@angular/router": "^5.2.0",
     "core-js": "^2.4.1",
     "rxjs": "^5.5.6",
-    "zone.js": "^0.8.19"
+    "zone.js": "^0.8.19",
+
+    "aframe": "aframevr/aframe#a3e0fc9"
   },
   "devDependencies": {
     "@angular/cli": "~1.7.0",
