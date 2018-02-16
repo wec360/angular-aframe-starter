@@ -8,7 +8,6 @@
       "root": "src",
       "outDir": "dist",
       "assets": [
-        { "glob": "**/*", "input": "../node_modules/aframe/dist", "output": "aframe" },
         "assets",
         "favicon.ico"
       ],
